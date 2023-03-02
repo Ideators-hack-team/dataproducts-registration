@@ -11,33 +11,28 @@ const AddDeleteTableRows = ({columns}) => {
     setRowsData(rowsInput);
   }
 
-  return(
-      <div className="container">
-          <div className="row">
-              <div>
-
-              <table className="table">
-                  <thead>
-                    <tr>
-                        <th>Physical Data Element</th>
-                        <th>Logical Data Element</th>
-                        <th>Physical Data Element Description</th>
-                        <th>PII</th>
-                    </tr>
-
-                  </thead>
-                  <tbody>
-                  <TableRows columns={columns} handleChange={handleChange} />
-                  </tbody> 
-              </table>
-
-              </div>
-              <div>
-
-              </div>
-          </div>
+  return (
+    <div className="container">
+      <div className="row">
+        <div>
+          <table className="table">
+            <thead>
+              <tr>
+                <th>Physical Data Element</th>
+                <th>Logical Data Element</th>
+                <th>Physical Data Element Description</th>
+                <th>PII</th>
+              </tr>
+            </thead>
+            <tbody>
+              <TableRows columns={columns} handleChange={handleChange} />
+            </tbody> 
+          </table>
+        </div>
+        <div>
+        </div>
       </div>
-  )
-
+    </div>
+  );
 }
 export default AddDeleteTableRows;

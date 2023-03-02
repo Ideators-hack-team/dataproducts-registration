@@ -12,7 +12,9 @@ function TableRows({columns, handleChange}) {
         console.log(piiFlag);
           return(
             <tr key={index}>
-              <td><input type="text" value={column} name="pdElement" className="form-control"/></td>
+              <td>
+                <input type="text" value={column} name="pdElement" className="form-control"/>
+              </td>
               <td><Suggestions data={lgElement}/></td>
               <td><Suggestions data={pyElementDesc}/></td>
               <td>

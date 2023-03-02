@@ -4,7 +4,7 @@ import Box from '@mui/material/Box';
 const RegisterForm = ({fileName}) => {
   return (
     <Box className='container'>
-      <label>New Data</label>
+      <h4>Manage a Data Set</h4>
       <hr/>
       <Box style={{margin: '0 0 50px 0'}}>
         <TextField

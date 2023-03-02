@@ -10,7 +10,6 @@ import * as XLSX from 'xlsx';
 const RegisterPage = () => {
   const [fileName, setFileName] = useState(undefined);
   const [file, setFile] = useState();
-  console.log(fileName);
   const [columnNames, setColumnsNames] = useState([]);
   const alphabets = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J'];
 
@@ -41,33 +40,48 @@ const RegisterPage = () => {
     setFile(wb.Sheets.Sheet1);
   }
 
-    return (
-      <>
-        <div style={{margin: '0 0 0 70px'}} className="text-center">
-          <ButtonGroup aria-label="Basic example" className='button-list'>
-            <Button variant="light"><AiOutlinePlus></AiOutlinePlus> Make a DB conncection</Button>
-            <Button variant="light">
-              <MdFileUpload></MdFileUpload>
-              <input
-                color="primary"
-                accept=".csv"
-                type="file"
-                id="icon-button-file"
-                onChange={(e) => {onFileUpload(e)}}
-                style={{marginLeft: '10px'}}
-              />
-            </Button>
-          </ButtonGroup>
-        </div>
-        <div className='register-page'>
-          <RegisterForm fileName={fileName}/>
+  const showRegisterForm = () => {
+    if(columnNames.length) {
+      return (
+        <>
           <AddDeleteTableRows columns={columnNames}/>
           <div className="text-center" style={{margin: '50px'}}>
-            <Button variant='info'>Save</Button>
+            <Button variant='info' style={{marginRight: '20px'}}>Save as Draft</Button>
+            <a href="./orders.json" download>
+              <Button variant='info'>Submit</Button>
+            </a>  
           </div>
-        </div>
-      </>
-    );
+        </>
+      )
+    }
+    
+    return null;
+  }
+
+  return (
+    <>
+      <div style={{margin: '0 0 0 70px'}} className="text-center">
+        <ButtonGroup aria-label="Basic example" className='button-list'>
+          <Button variant="light"><AiOutlinePlus></AiOutlinePlus> Make a DB conncection</Button>
+          <Button variant="light">
+            <MdFileUpload></MdFileUpload>
+            <input
+              color="primary"
+              accept=".csv"
+              type="file"
+              id="icon-button-file"
+              onChange={(e) => {onFileUpload(e)}}
+              style={{marginLeft: '10px'}}
+            />
+          </Button>
+        </ButtonGroup>
+      </div>
+      <div className='register-page'>
+        <RegisterForm fileName={fileName}/>
+        {showRegisterForm()}
+      </div>
+    </>
+  );
 }
 
 export default RegisterPage;
