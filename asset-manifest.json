@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/dataproducts-registration/static/css/main.a5420fab.css",
+    "main.js": "/dataproducts-registration/static/js/main.0dbc9b16.js",
+    "static/js/787.b2625337.chunk.js": "/dataproducts-registration/static/js/787.b2625337.chunk.js",
+    "static/media/database_icon.png": "/dataproducts-registration/static/media/database_icon.7d80683bfe5b544d78eb.png",
+    "index.html": "/dataproducts-registration/index.html",
+    "main.a5420fab.css.map": "/dataproducts-registration/static/css/main.a5420fab.css.map",
+    "main.0dbc9b16.js.map": "/dataproducts-registration/static/js/main.0dbc9b16.js.map",
+    "787.b2625337.chunk.js.map": "/dataproducts-registration/static/js/787.b2625337.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a5420fab.css",
+    "static/js/main.0dbc9b16.js"
+  ]
+}
