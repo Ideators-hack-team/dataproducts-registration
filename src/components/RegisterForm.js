@@ -20,7 +20,7 @@ const RegisterForm = ({fileName}) => {
             id="outlined-required"
             label="Required"
             style={{width: '400px'}}
-            value={fileName ? `This is ${fileName} type data`: null}
+            value={fileName ? `This is ${fileName} data`: null}
             defaultValue="Data Description"
           />
       </Box>

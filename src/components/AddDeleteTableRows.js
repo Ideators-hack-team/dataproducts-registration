@@ -2,7 +2,6 @@ import { useState } from "react";
 import TableRows from "./TableRows"
 
 const AddDeleteTableRows = ({columns}) => {
-  console.log(columns);
   const [rowsData, setRowsData] = useState([]);
   const handleChange = (index, evnt)=> {
     const { name, value } = evnt.target;
@@ -35,4 +34,5 @@ const AddDeleteTableRows = ({columns}) => {
     </div>
   );
 }
+
 export default AddDeleteTableRows;

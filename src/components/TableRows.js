@@ -1,5 +1,5 @@
 import Suggestions from "./Suggestions";
-import dataSuggestions from '../orders.json';
+import dataSuggestions from '../settlement_obligation.json';
 import SelectOption from './SelectOption';
 
 function TableRows({columns, handleChange}) {

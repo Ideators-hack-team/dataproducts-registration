@@ -1,0 +1,52 @@
+{
+	"Cpty Code": {
+		"logical_element": ["Counterparty Code"],
+		"physical_element_description": ["Unique identifier for a counterparty"],
+		"pii_flag": ["Yes"]
+	},
+	"G1 Cpty code": {
+		"logical_element": ["Group 1 Counterparty Code"],
+		"physical_element_description": ["Unique identifier for a group 1 counterparty"],
+		"pii_flag": ["Yes"]
+	},
+	"ClientTyp": {
+		"logical_element": ["Client Type"],
+		"physical_element_description": ["Type of client (Organization or Individual)"],
+		"pii_flag": ["No"]
+	},
+	"BookingID": {
+		"logical_element": ["Booking ID"],
+		"physical_element_description": ["Unique identifier for a booking"],
+		"pii_flag": ["Yes"]
+	},
+	"Trade Curr": {
+		"logical_element": ["Trade Currency"],
+		"physical_element_description": ["Currency of the trade"],
+		"pii_flag": ["No"]
+	},
+	"TrdDate": {
+		"logical_element": ["Trade Date"],
+		"physical_element_description": ["Date of the trade"],
+		"pii_flag": ["No"]
+	},
+	"Price": {
+		"logical_element": ["Price"],
+		"physical_element_description": ["Price"],
+		"pii_flag": ["No"]
+	},
+	"Settlement Method": {
+		"logical_element": ["Settlement Method"],
+		"physical_element_description": ["It describes actual settlement method of a trade"],
+		"pii_flag": ["No"]
+	},
+	"Actual Settlement Date": {
+		"logical_element": ["Actual Settlement Date"],
+		"physical_element_description": ["It describes actual settlement date of a trade"],
+		"pii_flag": ["No"]
+	},
+	"Settlement Entity Identification": {
+		"logical_element": ["Settlement Entity Identification"],
+		"physical_element_description": ["It identifies the Settlement Entry"],
+		"pii_flag": ["No"]
+	}
+}

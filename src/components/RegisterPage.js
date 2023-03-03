@@ -22,7 +22,7 @@ const RegisterPage = () => {
         alphabets.forEach((letter) => {
           const name = `${letter}1`;
           if(name === value){
-            columns.push(file[name].v);
+            columns.push((file[name].v).trim());
             setColumnsNames(columns);
           }
         });
