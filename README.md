@@ -7,6 +7,9 @@ This is powered by an AI assited library called sketch.
 UI link - https://ideators-hack-team.github.io/dataproducts-registration/  \
 API link - https://akansharaut.github.io/data-apis/settlement_obligation.json 
 
+### Working Product
+https://user-images.githubusercontent.com/10042768/224144340-ee2c146a-847c-4919-a0bd-8c756f8892a3.mp4
+
 ## Built with
 
 This section lists any major frameworks/libraries used to bootstrap your project. 
